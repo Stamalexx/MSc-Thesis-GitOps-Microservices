@@ -20,9 +20,9 @@ The automated pipeline executes in two decoupled phases:
 1. **Continuous Integration (Jenkins):** Utilizes a dynamic `git diff` mechanism to build only modified services. It provisions an ephemeral, localized replica of the application via `docker-compose` to execute headless Playwright End-to-End (E2E) smoke tests. This acts as the ultimate quality gate, ensuring defective logic never reaches production.
 2. **Continuous Delivery (Argo CD):** Once images are pushed to Docker Hub and the declarative Helm configurations are updated, Argo CD detects the state drift and autonomously synchronizes the live cluster with zero downtime.
 
+<div align="justify">
 <img width="354" height="736" alt="image" src="https://github.com/user-attachments/assets/deed7d05-d3b9-44c4-adfa-52969ac97bd2" />
 
-<div align="justify">
 <i>
 Architectural flow of the GitOps-driven CI/CD pipeline. The diagram illustrates the decoupling of continuous integration (Jenkins) from continuous delivery (Argo CD), highlighting the multi-repository strategy and the "pull-based" deployment mechanism within the Kubernetes cluster.
 </i>
