@@ -35,7 +35,7 @@ The resilience of the architecture was empirically tested against five distinct 
 
 ## Related Repositories
 The codebase utilized for this research is strictly segregated to enforce a secure separation of concerns:
-* [**GitOps Repository**](https://github.com/Stamalexx/microservices-gitops-config.git) - Contains the `values.yaml` file and Jenkins pipeline code.
+* [**GitOps Repository**](https://github.com/Stamalexx/microservices-gitops-config.git) 
 * [**Source Code Repository**](https://github.com/Stamalexx/microservices-demo-DevOps-apply.git)
 * [**Docker Repositories**](https://hub.docker.com/repositories/stamalexx)
 * [**E2E Testing Repository**](https://github.com/Stamalexx/microservices-playwright-testing.git)
